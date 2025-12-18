@@ -1,4 +1,4 @@
-import models.Points;
+import models.Point;
 import models.Shape;
 
 import java.io.File;
@@ -16,7 +16,7 @@ public class MyApplication {
             double x = sc.nextDouble();
             double y = sc.nextDouble();
 
-            Points point = new Points();
+            Point point = new Point();
             shape.addPoints(point);
         }
 
