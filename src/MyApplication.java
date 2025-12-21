@@ -12,16 +12,16 @@ public class MyApplication {
         Scanner sc = new Scanner(file);
         Shape shape = new Shape();
 
-        while (sc.hasNext()) {
+        while (sc.hasNextDouble()) {
             double x = sc.nextDouble();
             double y = sc.nextDouble();
 
-            Point point = new Point();
-            shape.addPoints(point);
+            Point point = new Point(x, y);
+            shape.addPoint(point);
         }
 
-        System.out.println(shape.calculatePerimeter());
-        System.out.println(shape.getAverageSide());
-        System.out.println(shape.getLongest());
+        System.out.println("Perimeter:" + shape.calculatePerimeter());
+        System.out.println("Average side:" + shape.getAverageSide());
+        System.out.println("Longest side:" + shape.getLongest());
     }
 }
